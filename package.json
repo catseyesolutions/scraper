@@ -1,0 +1,19 @@
+{
+      "name": "Scraper",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "dev": "nodemon index" // Setting up Nodemon
+      },
+      "keywords": [],
+      "author": "Shadow Smith",
+      "license": "MIT",
+      "dependencies": {
+        "express": "^4.17.1",
+        "puppeteer": "^2.0.0"
+      },
+      "devDependencies": {
+        "nodemon": "^2.0.2"
+      }
+    }
