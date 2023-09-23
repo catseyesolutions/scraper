@@ -10,8 +10,8 @@
       "author": "Al Can",
       "license": "MIT",
       "dependencies": {
+            "chrome-location": "^1.2.1",
             "express": "^4.18.2",
-            "locate-chrome": "^0.1.1",
             "puppeteer": "^19.4.0"
       },
       "devDependencies": {
