@@ -6,7 +6,6 @@
       "scripts": {
         "dev": "nodemon index",
         "postInstall": "node node_modules/puppeteer/install.js",
-        "build": "[my-framework] build --output public"
       },
       "keywords": [],
       "author": "Al Can",
