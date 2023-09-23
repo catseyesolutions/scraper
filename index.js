@@ -1,6 +1,6 @@
 const express = require('express'); // Adding Express
 const app = express(); // Initializing Express
-const location = require('chrome-locate');
+const location = require('chrome-location');
 const puppeteer = require('puppeteer'); // Adding Puppeteer
 
     app.get('/api', async (req, res) => {
