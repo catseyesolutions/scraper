@@ -1,14 +1,14 @@
 const express = require('express'); // Adding Express
 const app = express(); // Initializing Express
-const locateChrome = require('locate-chrome');
+const location = require('chrome-locate');
 const puppeteer = require('puppeteer'); // Adding Puppeteer
 
     app.get('/api', async (req, res) => {
 
-    const executablePath = await new Promise(resolve => locateChrome(arg => resolve(arg)));
+    console.log(location);
 
     // Launching puppeteer
-    puppeteer.launch({executablePath, headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"]}).then(async function(browser) {
+    puppeteer.launch({executablePath: location, headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"]}).then(async function(browser) {
         const page = await browser.newPage();
 
         await page.goto(req.query.url, { waitUntil: 'networkidle0' })
