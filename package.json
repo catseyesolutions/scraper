@@ -5,7 +5,6 @@
       "main": "index.js",
       "scripts": {
         "dev": "nodemon index",
-        "postInstall": "node node_modules/puppeteer/install.js",
       },
       "keywords": [],
       "author": "Al Can",
