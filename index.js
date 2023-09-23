@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer'); // Adding Puppeteer
     app.get('/api', function(req, res) {
 
     // Launching puppeteer
-    puppeteer.launch({executablePath: '/opt/render/.cache/puppeteer/chrome/linux-1108766', args: ['--no-sandbox']}).then(async function(browser) {
+    puppeteer.launch({executablePath: '/opt/render/.cache/puppeteer/chrome/linux-1108766', headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"]}).then(async function(browser) {
         const page = await browser.newPage();
 
         await page.goto(req.query.url, { waitUntil: 'networkidle0' })
