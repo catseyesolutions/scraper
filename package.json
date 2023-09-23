@@ -4,10 +4,10 @@
       "description": "",
       "main": "index.js",
       "scripts": {
-        "dev": "nodemon index" // Setting up Nodemon
+        "dev": "nodemon index"
       },
       "keywords": [],
-      "author": "Shadow Smith",
+      "author": "Al Can",
       "license": "MIT",
       "dependencies": {
         "express": "^4.17.1",
